@@ -1,0 +1,1 @@
+New-AzResourceGroupDeployment -ResourceGroupName 'ine-rg' -TemplateFile './storage-account.json' -Mode Incremental

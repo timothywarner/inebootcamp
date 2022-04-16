@@ -1,0 +1,28 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'Azure'
+    ScriptType: 'FilePath'
+    ScriptPath: './storage-account.ps1'
+    # ScriptArguments: -Location 'eastus' -ResourceGroupName 'ine-rg' -TemplateFile ./storage-account.json
+    azurePowerShellVersion: 'LatestVersion'
+
+#- task: AzureResourceManagerTemplateDeployment@3
+#  inputs:
+#    deploymentScope: 'Resource Group'
+#    azureResourceManagerConnection: '<your-resource-manager-connection>'
+#    subscriptionId: '<your-subscription-id>'
+#    action: 'Create Or Update Resource Group'
+#    resourceGroupName: 'ARMPipelinesLAMP-rg'
+#    location: '<your-closest-location>'
+#    templateLocation: 'Linked artifact'
+#    csmFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.json'
+#    csmParametersFile: '$(Build.ArtifactStagingDirectory)/azuredeploy.parameters.json'
+#    overrideParameters: '-siteName $(siteName) -administratorLogin $(adminUser) -administratorLoginPassword $(ARM_PASS)'
+#    deploymentMode: 'Incremental'
