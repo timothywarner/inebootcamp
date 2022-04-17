@@ -77,3 +77,16 @@
 - [Docs](https://docs.github.com/en/enterprise-cloud@latest/actions)
 - [Actions library](https://github.com/actions)
 - [Deploy ARM template with Actions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-github-actions)
+
+## Git Learning
+
+- Learn Git Branching
+- Codecademy
+
+## Git Tools
+
+- Git GUI
+- GitHub GUI
+- Powerline
+- CodeLens
+-

@@ -52,6 +52,24 @@
 
 - `git reset HEAD~1`
 
+## Rebase
+
+- let main get ahead of feature branch
+- `git rebase main`
+
+## Merge locally
+
+- `git checkout main`
+- `git merge featurebranch`
+- `git log`
+
+## Squash merge
+
+- `git checkout main`
+- `git merge --squash featurebranch`
+- `git commit -m "Took multiple actions"`
+- `git log`
+
 ## Push your change to your fork
 
 - `git push -u origin timwarner-feature1`
