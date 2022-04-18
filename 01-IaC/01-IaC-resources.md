@@ -89,4 +89,22 @@
 - GitHub GUI
 - Powerline
 - CodeLens
+
+## Git books
+
+
+
+## Writing good commit and PR messages
+
 -
+
+## Markdown Learning
+
+- Markdown reference
+- Markdown cheat sheet
+
+
+awesome readme github
+
+
+
