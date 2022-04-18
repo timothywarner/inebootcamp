@@ -78,33 +78,35 @@
 - [Actions library](https://github.com/actions)
 - [Deploy ARM template with Actions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-github-actions)
 
-## Git Learning
+## Git Online Learning
 
-- Learn Git Branching
-- Codecademy
+- [Learn Git Branching](https://learngitbranching.js.org/)
+- [Codecademy Learn Git and GitHub](https://www.codecademy.com/learn/learn-git?utm_source=pepperjam&utm_medium=affiliate&utm_term=214453&clickId=3938750880&pj_creativeid=8-12462&pj_publisherid=214453)
+
+## Git Books
+
+- [Learn Git in a Month of Lunches](https://www.manning.com/books/learn-git-in-a-month-of-lunches)
+- [Pro Git](https://git-scm.com/book/en/v2)
+- [Git Pocket Guide](https://www.oreilly.com/library/view/git-pocket-guide/9781449327507/)
 
 ## Git Tools
 
-- Git GUI
-- GitHub GUI
-- Powerline
-- CodeLens
-
-## Git books
-
-
+- [Git GUI](https://git-scm.com/docs/git-gui/)
+- [GitHub Desktop](https://desktop.github.com/)
+- [Posh-Git](https://github.com/dahlbyk/posh-git)
+- [Powerline](https://docs.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup)
+- [GitLens](https://www.gitkraken.com/gitlens)
 
 ## Writing good commit and PR messages
 
--
+- [cbeams](https://cbea.ms/git-commit/)
+- [Reflectoring.io](https://reflectoring.io/meaningful-commit-messages/)
+- [dev.to](https://dev.to/wordssaysalot/art-of-writing-a-good-commit-message-56o7)
+- [GitHub](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
 
 ## Markdown Learning
 
-- Markdown reference
-- Markdown cheat sheet
-
-
-awesome readme github
-
-
-
+- [GitHub MD spec](https://github.github.com/gfm/)
+- [Basic syntax](https://www.markdownguide.org/basic-syntax/)
+- [CommonMark reference](https://commonmark.org/help/)
+- [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
