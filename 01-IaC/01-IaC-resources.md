@@ -55,6 +55,7 @@
 - [ARM & Bicep template reference](https://docs.microsoft.com/en-us/azure/templates/)
 - [ARM template functions](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-functions)
 - [ARM template specs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell)
+- [Azure DevOps Multi-Stage YAML Pipelines](https://www.mercuryworks.com/blog/creating-a-multi-stage-pipeline-in-azure-devops/)
 
 ## Your Dev Toolkit
 
@@ -110,3 +111,8 @@
 - [Basic syntax](https://www.markdownguide.org/basic-syntax/)
 - [CommonMark reference](https://commonmark.org/help/)
 - [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+## YAML Help
+
+- [Learn X in Y Minutes](https://learnxinyminutes.com/docs/yaml/)
+- [Azure Pipelines YAML schema](https://docs.microsoft.com/en-us/azure/devops/pipelines/yaml-schema/?view=azure-pipelines)
