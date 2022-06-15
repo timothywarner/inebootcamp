@@ -1,0 +1,37 @@
+# Ref: https://timw.info/m31
+
+# Ref 2: https://timw.info/js7
+
+# GH PAT: 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
+
+az acr create --name twacr1 --resource-group ine-rg --admin-enabled --
+
+
+# Create the task
+az acr task create \
+    --registry $ACR_NAME \
+    --name example1 \
+    --context https://github.com/timothywarner/acr-build-helloworld-node.git#main \
+    --file taskmulti.yaml \
+    --git-access-token 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 \
+    --output json
+
+# Test the task
+az acr task run --registry $ACR_NAME --name example1
+
+# Trigger a build with a commit
+cd acr-build-helloworld-node
+echo "Hello World!" > hello.txt
+git add hello.txt
+git commit -m "Testing ACR Tasks"
+git push origin main
+
+# View Task logs
+az acr task logs --registry $ACR_NAME
+
+# List builds
+az acr task list-runs --registry $ACR_NAME --output table
+
+
+
+

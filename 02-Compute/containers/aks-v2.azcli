@@ -1,0 +1,69 @@
+# Ref: https://timw.info/mxt
+
+# Get sample app
+git clone https://github.com/Azure-Samples/azure-voting-app-redis.git
+cd azure-voting-app-redis
+
+# Build the application
+docker-compose up -d
+
+# View available image
+docker images
+
+# Browse website
+http://localhost:8080
+
+# Remove container instances and resources
+docker compose down
+
+# Create Azure Container Registry
+az acr create --resource-group ine-rg --name twineacr --sku Premium
+
+# Sign into ACR
+az acr login --name twineacr.azurecr.io
+
+# Get login server address
+az acr list --resource-group ine-rg --query "[].{acrLoginServer:loginServer}" --output table
+
+# Tag the vote front app
+docker tag mcr.microsoft.com/azuredocs/azure-vote-front:v1 twineacr.azurecr.io/azure-vote-front:v1
+
+# Push image to the registry
+docker push twineacr.azurecr.io/azure-vote-front:v1
+
+# List images and tags in registry
+az acr repository list --name twineacr.azurecr.io --output table
+
+az acr repository show-tags --name twineacr.azurecr.io --repository azure-vote-front --output table
+
+# Create AKS cluster
+az aks create --resource-group ine-rg --name ineaks --node-count 2 --generate-ssh-keys --attach-acr twineacr.azurecr.io
+
+# Install Kubernetes CLI
+az aks install-cli
+
+$env:path += 'C:\Users\tim\.azure-kubectl'
+
+# Connect to the AKS cluster
+az aks get-credentials --resource-group ine-rg --name ineaks
+
+kubectl get nodes
+
+# Update the manifest file
+code "c:\github\azure-voting-app-redis\azure-vote-all-in-one-redis.yaml"
+
+# Deploy application
+kubectl apply -f azure-vote-all-in-one-redis.yaml
+
+# Monitor deployment (CTRL+C to stop)
+kubectl get service azure-vote-front --watch
+
+
+
+
+
+
+
+
+
+
