@@ -1,0 +1,26 @@
+TWDEVDOMAIN
+
+* Groups: IaaS Managers, Shared Service Managers
+
+* Users:
+  - Henry Miller (henry@twdevdomain.com)
+  - Anais Nin (anais@twdevdomain.com)
+  - City: Myrtle Beach
+
+* Admin Unit
+  - Myrtle Beach Team
+
+* App:
+  - INEApp01
+
+* MSI:
+  - INEIdentity
+
+* Resource Groups
+  - shared-services-rg
+    - Key Vault
+    - Storage Account
+  - iaas-rg
+    - VNet
+    - VM
+
