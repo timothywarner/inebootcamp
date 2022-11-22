@@ -11,7 +11,7 @@
   "parameters": {
     "vnetName": {
       "type": "string",
-      "defaultValue": "VNet1",
+      "defaultValue": "az400-vnet",
       "metadata": {
         "description": "VNet name"
       }
