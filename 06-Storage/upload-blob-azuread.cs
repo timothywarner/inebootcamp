@@ -1,0 +1,1 @@
+// upload blob azure storage azure ad token

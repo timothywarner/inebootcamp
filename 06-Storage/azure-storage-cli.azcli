@@ -1,0 +1,9 @@
+az storage blob upload -c container -f file -n blob
+
+# azure cli upload blob to azure storage account with sas token
+
+az storage blob upload -c container -f file -n blob --sas-token sasToken
+
+# azure cli upload blob to azure storage account with sas token and account name
+
+az storage blob upload -c container -f file -n blob --sas-token sasToken --account-name accountName
