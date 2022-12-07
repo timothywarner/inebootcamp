@@ -23,7 +23,7 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./create-storage-account.json
+        template: ./create-storage-account.bicep
         # parameters: storageAccountType=Standard_LRS
 
       # output containerName variable from template
