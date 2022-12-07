@@ -1,4 +1,8 @@
-on: [push]
+on:
+  push:
+    branches:
+      - "ine"
+
 name: Azure ARM
 jobs:
   build-and-deploy:
@@ -19,7 +23,7 @@ jobs:
       with:
         subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
         resourceGroupName: ${{ secrets.AZURE_RG }}
-        template: ./create-vnet.json
+        template: ./create-storage-account.json
         # parameters: storageAccountType=Standard_LRS
 
       # output containerName variable from template
