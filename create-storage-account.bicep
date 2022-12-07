@@ -9,7 +9,7 @@
   'Standard_RAGZRS'
   'Standard_ZRS'
 ])
-param storageAccountType string = 'Standard_LRS'
+param storageAccountType string = 'Standard_GRS'
 
 @description('Location for the storage account.')
 param location string = resourceGroup().location
