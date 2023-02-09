@@ -1,5 +1,7 @@
 # INE Azure Infrastructure as Code Bootcamp Spring 2022
 
+<testing>
+
 - [Session 1](#infrastructure-as-code)
   - [Day 1 of 3](#day-1-of-3)
   - [Day 2 of 3](#day-2-of-3)
